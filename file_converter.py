@@ -15,8 +15,8 @@ if os.path.splitext(os.path.basename(file_origin))[1]== '.mp4':
         audioclip = videoclip.audio
         # audioclip.write_audiofile(mp3_file)
         # audioclip.write_audiofile(mp3_file, fps= 8000 )
-        os.system('mkdir downloads')
-        os.chdir('downloads')
+        os.system('mkdir storage')
+        os.chdir('storage')
 
         audioclip.write_audiofile(mp3_file, fps= 44100  )
         audioclip.close()
@@ -29,8 +29,8 @@ if os.path.splitext(os.path.basename(file_origin))[1]== '.mp4':
             audioclip = videoclip.audio
             # audioclip.write_audiofile(wav_file)
             # audioclip.write_audiofile(wav_file, fps= 8000 )
-            os.system('mkdir downloads')
-            os.chdir('downloads')
+            os.system('mkdir storage')
+            os.chdir('storage')
 
             audioclip.write_audiofile(wav_file, fps= 44100  )
             audioclip.close()
@@ -43,8 +43,8 @@ if os.path.splitext(os.path.basename(file_origin))[1]== '.mp4':
             audioclip = videoclip.audio
             # audioclip.write_audiofile(flac_file)
             # audioclip.write_audiofile(flac_file, fps= 8000 )
-            os.system('mkdir downloads')
-            os.chdir('downloads')
+            os.system('mkdir storage')
+            os.chdir('storage')
 
             audioclip.write_audiofile(flac_file, fps= 44100  )
             audioclip.close()
